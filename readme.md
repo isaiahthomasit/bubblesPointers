@@ -1,4 +1,5 @@
 '''text
+
 constant MAX is max length of array
 main (){
   create int variables a and b

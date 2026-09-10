@@ -1,4 +1,4 @@
-'''text
+```text
 
 constant MAX is max length of array
 main (){
@@ -7,5 +7,6 @@ main (){
     for b from zero MAX -1:
       if array[b] > array [b+1]:
         swap array[b] with array[b+1]
-        printArray(array)  
-'''
+        printArray(array) 
+} 
+```

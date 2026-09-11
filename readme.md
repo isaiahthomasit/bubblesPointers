@@ -1,12 +1,23 @@
 ```text
 
-constant MAX is max length of array
-main (){
-  create int variables a and b
-  for a from 0 to MAX - 1:
-    for b from zero MAX -1:
-      if array[b] > array [b+1]:
-        swap array[b] with array[b+1]
-        printArray(array) 
-} 
+printValues(array)
+  start at first element of array
+  print current element
+  move to next element
+  repeat unitl all 9 elements are printed 
+
+swap(value1, value2)
+  create a temp variable
+  store value1 in temp
+  copy value2 into value1
+  copy temp into value 2
+
+sort(array)
+  start at frst pair of elements
+  compare the two elements
+  if left element > right element, swap them
+  move to the next pair
+  continue until you reach the end
+  repeat until array is sorted
+ 
 ```

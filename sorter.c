@@ -1,13 +1,50 @@
 #include <stdio.h>
-const int MAX = 9
+const int MAX = 9;
 
-// translate printValues() function into C
+void printValues(int *array){
+  int i = 0;
+  printf("[");
+  for (i = 0; i < MAX; i++){
+    printf("%d ", array[i]);
+  }
+  printf("]\n");      
+}
 
-void printValues(int*){
-  int i
-  
- 
+void swap(int *value1, int *value2){
+  int temp;
+  temp = *value1;
+  *value1 = *value2;
+  *value2 = temp;
+}
+
+void sort(int *array){
+  for (int i = 0; i < MAX -1; i++){
+    for (int j = 0; j < MAX - 1; j++){
+      if (array[j] > array[j + 1]){
+         swap(&array[j], &array[j + 1]);
+	 printValues(array);
+      }
+    }
+  }
+}
+
 int main(){
   int values[] = {7, 3, 9, 4, 6, 1, 2, 8, 5};
   printf("Before: \n");
   printValues(values);
+
+  // test swap
+  int x = 3;
+  int y = 5;
+  printf("x: %d, y: %d \n", x, y);
+  swap(&x, &y);
+  printf("x: %d, y: %d \n", x, y);
+
+  sort(values);
+  printf("After: \n");
+  printValues(values);
+
+  return(0);
+} // end main 
+
+
